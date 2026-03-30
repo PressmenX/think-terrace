@@ -5,9 +5,107 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ThinkTerrace</title>
+    <link rel="stylesheet" href="src/style/main.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <span class="brand-logo">▣</span>
+          <span class="brand-name">ThinkTerrace</span>
+        </div>
+        <button class="cart-btn" aria-label="Open cart">
+          🛒
+          <span class="cart-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h1>The Legendary Machine, <br />Now in One Place.</h1>
+        <p>Browse the finest Thinkpad lineup — built for thinkers.</p>
+      </section>
+
+      <!-- CONTROL BAR -->
+      <section class="control-bar" aria-label="Filter and sort products">
+        <div class="filter-group">
+          <label for="filter-category">Series</label>
+          <select id="filter-category" name="filter-category">
+            <option value="all">All Series</option>
+            <option value="X">X Series</option>
+            <option value="T">T Series</option>
+            <option value="L">L Series</option>
+            <option value="E">E Series</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filter-price">Max Price</label>
+          <input
+            type="range"
+            id="filter-price"
+            name="filter-price"
+            min="0"
+            max="30000000"
+            step="500000"
+          />
+          <output id="price-output">Rp 30.000.000</output>
+        </div>
+
+        <div class="filter-group">
+          <label for="sort-by">Sort By</label>
+          <select id="sort-by" name="sort-by">
+            <option value="default">Default</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating-desc">Best Rating</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- PRODUCT GRID -->
+      <section class="product-section">
+        <h2 class="section-title">All Products</h2>
+        <div class="product-grid" id="product-grid">
+          
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== CART DRAWER ===== -->
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
+      <div class="cart-drawer-inner">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <button
+            class="cart-close-btn"
+            id="cart-close-btn"
+            aria-label="Close cart"
+          >
+            ✕
+          </button>
+        </div>
+
+        <ul class="cart-list" id="cart-list">
+        </ul>
+
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">Rp 0</strong>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    
     <script type="module" src="src/script/app.js"></script>
   </body>
 </html>
