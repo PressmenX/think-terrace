@@ -1,4 +1,3 @@
-import products from '../data/products.json' with { type: 'json' };
 
 const state = {
   products: [],
