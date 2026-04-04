@@ -6,7 +6,7 @@
     "price": 28500000,
     "rating": 4.9,
     "stock": 5,
-    "image": "/images/x1-carbon.jpg",
+    "image": "/images/x1-carbon.png",
     "description": "Ultra-lightweight business laptop, Intel Core i7, 16GB RAM, 512GB SSD."
   },
   {
@@ -16,7 +16,7 @@
     "price": 18900000,
     "rating": 4.7,
     "stock": 8,
-    "image": "/images/x13.jpg",
+    "image": "/images/x13.png",
     "description": "Compact powerhouse, AMD Ryzen 7, 16GB RAM, 512GB SSD."
   },
   {
@@ -26,7 +26,7 @@
     "price": 17500000,
     "rating": 4.8,
     "stock": 10,
-    "image": "/images/t14s.jpg",
+    "image": "/images/t14s.png",
     "description": "Reliable workhorse, Intel Core i5, 16GB RAM, 256GB SSD."
   },
   {
@@ -36,7 +36,7 @@
     "price": 21000000,
     "rating": 4.6,
     "stock": 6,
-    "image": "/images/t16.jpg",
+    "image": "/images/t16.png",
     "description": "16-inch display, Intel Core i7, 32GB RAM, 1TB SSD."
   },
   {
@@ -46,7 +46,7 @@
     "price": 13500000,
     "rating": 4.4,
     "stock": 12,
-    "image": "/images/l14.jpg",
+    "image": "/images/l14.png",
     "description": "Affordable business laptop, AMD Ryzen 5, 8GB RAM, 256GB SSD."
   },
   {
@@ -56,7 +56,7 @@
     "price": 15000000,
     "rating": 4.3,
     "stock": 9,
-    "image": "/images/l15.jpg",
+    "image": "/images/l15.png",
     "description": "15-inch budget-friendly, Intel Core i5, 8GB RAM, 512GB SSD."
   },
   {
@@ -66,7 +66,7 @@
     "price": 11000000,
     "rating": 4.2,
     "stock": 15,
-    "image": "/images/e14.jpg",
+    "image": "/images/e14.png",
     "description": "Entry-level business laptop, AMD Ryzen 5, 8GB RAM, 256GB SSD."
   },
   {
@@ -76,7 +76,7 @@
     "price": 12500000,
     "rating": 4.1,
     "stock": 11,
-    "image": "/images/e15.jpg",
+    "image": "/images/e15.png",
     "description": "Entry-level 15-inch, Intel Core i5, 8GB RAM, 512GB SSD."
   },
   {
@@ -86,7 +86,7 @@
     "price": 35000000,
     "rating": 4.9,
     "stock": 3,
-    "image": "/images/x1-extreme.jpg",
+    "image": "/images/x1-extreme.png",
     "description": "High-performance creator laptop, Intel Core i9, 32GB RAM, RTX 3050 Ti."
   },
   {
@@ -96,7 +96,7 @@
     "price": 16000000,
     "rating": 4.5,
     "stock": 7,
-    "image": "/images/t14.jpg",
+    "image": "/images/t14.png",
     "description": "Mid-range workhorse, AMD Ryzen 7, 16GB RAM, 512GB SSD."
   },
   {
@@ -106,7 +106,7 @@
     "price": 12000000,
     "rating": 4.2,
     "stock": 10,
-    "image": "/images/l13.jpg",
+    "image": "/images/l13.png",
     "description": "Compact affordable option, Intel Core i3, 8GB RAM, 256GB SSD."
   },
   {
@@ -116,7 +116,7 @@
     "price": 14000000,
     "rating": 4.3,
     "stock": 8,
-    "image": "/images/e16.jpg",
+    "image": "/images/e16.png",
     "description": "Large screen entry-level, Intel Core i5, 16GB RAM, 512GB SSD."
   }
 ]

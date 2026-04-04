@@ -1,0 +1,7 @@
+:root {
+  --color-surface: #141414;
+  --color-accent: #e2001a;
+  --bg-hover: rgba(255, 255, 255, 0.15);
+  --transition-hover: all 300ms ease-in-out;
+  --color-price: rgb(226, 39, 24);
+}

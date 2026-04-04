@@ -11,7 +11,7 @@ import { renderProducts, renderCart, updateCartBadge } from './render.js';
 
 async function initApp() {
   try {
-    const res = await fetch('/src/data/products.json');
+    const res = await fetch('./products.json');
     if (!res.ok) throw new Error('Failed to load data');
 
     const data = await res.json();
@@ -22,8 +22,6 @@ async function initApp() {
     initFilters();
     initCartEvents();
     updateCartBadge();
-
-    console.log(state);
   } catch (err) {
     console.log('Error', err);
   }
