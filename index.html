@@ -2,21 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
     <title>ThinkTerrace</title>
     <link rel="stylesheet" href="src/style/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <!-- ===== HEADER ===== -->
     <header class="site-header">
-      <div class="header-inner">
-        <div class="brand">
-          <span class="brand-logo">▣</span>
-          <span class="brand-name">ThinkTerrace</span>
-        </div>
-        <button class="cart-btn" aria-label="Open cart">
-          🛒
+      <div id="header-inner">
+        <h2 class="brand-name">
+          <span class="brand-logo">▣</span>Th<span id="brand-dot">i</span
+          >nkTerrace
+        </h2>
+
+        <button id="cart-btn" aria-label="Open cart">
+          <span class="material-symbols-outlined cart-icon">
+            shopping_cart
+          </span>
           <span class="cart-badge" id="cart-badge">0</span>
         </button>
       </div>
@@ -26,12 +32,13 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <h1>The Legendary Machine, <br />Now in One Place.</h1>
+        <h1>The Legendary Machine, <br /><span>Now in One Place.</span></h1>
         <p>Browse the finest Thinkpad lineup — built for thinkers.</p>
+        <a id="go-to-products" href="#product-section">Go to Products</a>
       </section>
 
       <!-- CONTROL BAR -->
-      <section class="control-bar" aria-label="Filter and sort products">
+      <section id="control-bar" aria-label="Filter and sort products">
         <div class="filter-group">
           <label for="filter-category">Series</label>
           <select id="filter-category" name="filter-category">
@@ -45,15 +52,17 @@
 
         <div class="filter-group">
           <label for="filter-price">Max Price</label>
-          <input
-            type="range"
-            id="filter-price"
-            name="filter-price"
-            min="0"
-            max="30000000"
-            step="500000"
-          />
-          <output id="price-output">Rp 30.000.000</output>
+          <div id="value-control">
+            <input
+              type="range"
+              id="filter-price"
+              name="filter-price"
+              min="0"
+              max="35000000"
+              step="500000"
+            />
+            <output id="price-output">Rp 35.000.000</output>
+          </div>
         </div>
 
         <div class="filter-group">
@@ -68,11 +77,9 @@
       </section>
 
       <!-- PRODUCT GRID -->
-      <section class="product-section">
+      <section id="product-section">
         <h2 class="section-title">All Products</h2>
-        <div class="product-grid" id="product-grid">
-          
-        </div>
+        <div class="product-grid" id="product-grid"></div>
       </section>
     </main>
 
@@ -80,7 +87,12 @@
     <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping cart">
       <div class="cart-drawer-inner">
         <div class="cart-header">
-          <h2>Your Cart</h2>
+          <h2 id="cart-title">
+            <span class="material-symbols-outlined cart-icon">
+              shopping_cart
+            </span>
+            Your Cart
+          </h2>
           <button
             class="cart-close-btn"
             id="cart-close-btn"
@@ -90,22 +102,21 @@
           </button>
         </div>
 
-        <ul class="cart-list" id="cart-list">
-        </ul>
+        <ul class="cart-list" id="cart-list"></ul>
 
         <div class="cart-footer">
           <div class="cart-total">
             <span>Total</span>
             <strong id="cart-total">Rp 0</strong>
           </div>
-          <button class="checkout-btn">Checkout</button>
+          <button class="checkout-btn">Checkout Now</button>
         </div>
       </div>
     </aside>
 
     <!-- CART OVERLAY -->
     <div class="cart-overlay" id="cart-overlay"></div>
-    
+
     <script type="module" src="src/script/app.js"></script>
   </body>
 </html>
