@@ -1,6 +1,6 @@
 # ThinkTerrace
 
-[![Repo](https://img.shields.io/badge/vercel-live_demo-darkgreen?logo=vercel)](https://github.com/PressmenX/think-terrace) [![Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/PressmenX/think-terrace) </br>
+[![Repo](https://img.shields.io/badge/vercel-live_demo-darkgreen?logo=vercel)](https://think-terrace.vercel.app/) [![Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/PressmenX/think-terrace) </br>
 ThinkTerrace adalah aplikasi e-commerce sederhana berbasis web yang dikhususkan untuk lini produk laptop legendaris, Lenovo ThinkPad. Proyek ini dibangun menggunakan Vanilla JavaScript dengan pendekatan arsitektur modern untuk mendemonstrasikan manajemen state, filter data dinamis, dan sistem keranjang belanja.
 
 ## 🚀 Main Feature
